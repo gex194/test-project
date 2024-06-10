@@ -1,5 +1,4 @@
 import { createUseStyles } from "react-jss";
-import "./App.css";
 import CardsPage from "./pages/CardsPage/CardsPage";
 
 const useStyles = createUseStyles({

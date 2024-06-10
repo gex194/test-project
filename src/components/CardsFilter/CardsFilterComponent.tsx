@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { filterByEmployeeName, filterById } from "../../features/cardsFilter";
 import { createUseStyles } from "react-jss";
+import { filterByCardIdInputPlaceholder, filterByEmployeeNameInputPlaceholder } from "../../constants/constants";
 
 const useStyles = createUseStyles({
   Input: {
@@ -59,14 +60,14 @@ const CardsFilterComponent = () => {
       <input
         type="number"
         className={classes.Input}
-        placeholder="Номер заявки"
+        placeholder={filterByCardIdInputPlaceholder}
         value={cardIdSearchInput}
         onInput={handleCardIdSearchInput}
         onKeyDown={filterCardsByCardId}
       />
       <input
         className={classes.Input}
-        placeholder="Наименование клиента"
+        placeholder={filterByEmployeeNameInputPlaceholder}
         value={employeeNameSearchInput}
         onInput={handleEmployeeNameSearchInput}
         onKeyDown={filterCardsByEmployeeName}
