@@ -34,11 +34,11 @@ const CardsListComponent = () => {
     if (isSuccess) {
       dispatch(setCards(cards));
     }
-  }, [isSuccess]);
+  }, [isSuccess, cards, dispatch]);
 
   const handleOnClick = (cardId: number) => {
     setSelected(cardId);
-    if (cardId == selected) {
+    if (cardId === selected) {
       setSelected(0);
     }
   };
