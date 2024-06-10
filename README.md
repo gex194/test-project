@@ -5,7 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Technologies used:
 1) RTK + RTK Query
 2) JSS
-3) Mocky.io for backend mock 
+3) Mocky.io for backend mock
+
+Took around 6 hours in total
 
 ## Installation
 
